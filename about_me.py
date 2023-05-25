@@ -10,7 +10,6 @@ def main():
     about_me = {
         # TODO: Put full name into data structure
         'full_name': 'Mohammadaman Ajmeri',
-        'first_name': 'Aman',
         # TODO: Put student ID into data structure
         'Student_Id': 10291830,
         # TODO: Put list of 3 pizza toppings into data structure
@@ -63,7 +62,10 @@ def print_student_name_and_id(my_info):
     # TODO: Complete function body per Step 3
     # Print sentence containing name
     # Print sentence containing student ID
-    print()
+    first_name = (my_info['full_name'].split[0])
+    first_name = first_name[0]
+    print(f"My name is {my_info['full_name']}, but you can call me Sir {first_name}.")
+    print(f"My student id is {my_info['Student_Id']}.")
 
 def print_pizza_toppings(my_info):
     """Prints a bullet list of favourite pizza toppings
