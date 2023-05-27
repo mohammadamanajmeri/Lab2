@@ -77,8 +77,8 @@ def print_pizza_toppings(my_info):
     # Print header "My favourite pizza toppings are:"
     # Print bullet list of favourite pizza toppings
     print(f"My favourite pizza toppings are:")
-    for Toppings in (my_info['Pizza_Toppings']):
-        print(f'- {Toppings}')
+    for toppings in (my_info['Pizza_Toppings']):
+        print(f'- {toppings}')
 
 def add_pizza_toppings(my_info, toppings):
     """Adds some pizza toppings to the list of favourites
@@ -89,8 +89,12 @@ def add_pizza_toppings(my_info, toppings):
     """
     # TODO: Complete function body per Step 5
     # Append new pizza toppings to end of list 
+    my_info['Pizza_Toppings'].extend(toppings)
     # Convert all pizza toppings to lowercase
+    for i, lowercase_toppings in enumerate(my_info['Pizza_Toppings']):
+        my_info['Pizza_Toppings'][i] = lowercase_toppings.lower()
     # Sort toppings list alphabetically
+    my_info['Pizza_Toppings'].sort()
     return
 
 def add_movie(my_info, title, genre):
