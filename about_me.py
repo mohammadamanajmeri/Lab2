@@ -76,7 +76,7 @@ def print_pizza_toppings(my_info):
     # TODO: Complete function body per Step 4
     # Print header "My favourite pizza toppings are:"
     # Print bullet list of favourite pizza toppings
-    print(f"My favourite pizza toppings are:")
+    print(f"\nMy favourite pizza toppings are:")
     for toppings in (my_info['Pizza_Toppings']):
         print(f'- {toppings}')
 
@@ -120,18 +120,22 @@ def print_movie_genres(my_info):
     Args:
         my_info (dict): Data structure containing information about me
     """
-    print(f"\n I like to watch", end='')
+    print(f"\nI like to watch ", end='')
     # TODO: Complete function body per Step 7
     movie_genre = [genres['genre'] for genres in my_info['movies']]
     print(', '.join(movie_genre), end='.')
+
 def print_movie_titles(movie_list):
-        """Prints a sentence listing all favourite movie titles
+    """Prints a sentence listing all favourite movie titles
 
     Args:
         movie_list (list): List of favourite movies
     """
+    print(f"\n\nSome of my favrouite movies are ", end='')
+
     # TODO: Complete function body per Step 8
-    
+    movie_title = [titles['title'] for titles in movie_list]
+    print(', '.join(movie_title).title(),end='!')
 
 if __name__ == '__main__':
     main()
