@@ -65,7 +65,7 @@ def print_student_name_and_id(my_info):
     first_name = (my_info['full_name'].split())
     first_name = first_name[0]
     print(f"My name is {my_info['full_name']}, but you can call me Sir {first_name}.")
-    print(f"My student id is {my_info['Student_Id']}.")
+    print(f"My student ID is {my_info['Student_Id']}.")
 
 def print_pizza_toppings(my_info):
     """Prints a bullet list of favourite pizza toppings
@@ -80,7 +80,7 @@ def print_pizza_toppings(my_info):
     for toppings in (my_info['Pizza_Toppings']):
         print(f'- {toppings}')
 
-def add_pizza_toppings(my_info, toppings):
+def add_pizza_toppings(my_info, toppings): 
     """Adds some pizza toppings to the list of favourites
 
     Args:
